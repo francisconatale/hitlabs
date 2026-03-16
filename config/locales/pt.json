@@ -9,103 +9,103 @@
         "allRightsReserved": "Todos os direitos reservados."
     },
     "layout": {
-        "titleSuffix": "O Futuro da Inovação",
-        "description": "Construindo a próxima geração de experiências digitais"
+        "titleSuffix": "Software sob medida para você",
+        "description": "Transformamos sua ideia em software real, independente do orçamento"
     },
     "navbar": {
-        "product": "Produto",
-        "features": "Características",
-        "pricing": "Preços"
+        "product": "O que fazemos",
+        "features": "Como trabalhamos",
+        "pricing": "Orçamento"
     },
     "hero": {
-        "badge": "Agora em versão beta pública",
-        "headlineMain": "Software que se move",
-        "headlineAccent": "na velocidade do pensamento",
-        "subheadline": "Projetamos e desenvolvemos software de alto impacto que impulsiona o seu negócio. Soluções customizadas para empresas que buscam inovar e escalar sem limites.",
-        "ctaPrimary": "Comece gratuitamente",
-        "ctaSecondary": "Veja a demonstração",
-        "trustedBy": "Com a confiança das equipes em"
+        "badge": "Soluções reais para problemas reais",
+        "headlineMain": "Sua ideia transformada em software,",
+        "headlineAccent": "sob medida para você e seu orçamento",
+        "subheadline": "Desenvolvemos softwares customizados para solucionar o problema específico do seu negócio. Sem custos inflacionados, sem recursos desnecessários: apenas o que importa, feito da maneira certa.",
+        "ctaPrimary": "Conte-nos sua ideia",
+        "ctaSecondary": "Ver projetos",
+        "trustedBy": "Construindo soluções para"
     },
     "scrollCanvas": {
-        "badge": "O futuro é agora",
-        "build": "Construir",
-        "scale": "Escala",
-        "launch": "Lança",
+        "badge": "É assim que trabalhamos",
+        "build": "Nós ouvimos",
+        "scale": "Nós projetamos",
+        "launch": "Nós entregamos",
         "scroll": "Role para explorar"
     },
     "products": {
-        "badge": "Produtos",
-        "headline": "Tudo que você precisa para escalar",
+        "badge": "Soluções",
+        "headline": "Construímos o que seu negócio precisa",
         "items": {
             "customSoftware": {
                 "name": "Software personalizado",
-                "tagline": "Soluções únicas para problemas únicos",
-                "description": "Desenhamos e desenvolvemos softwares personalizados que se adaptam perfeitamente aos processos da sua empresa, escaláveis ​​consigo.",
+                "tagline": "Seu problema, nossa solução",
+                "description": "Analisamos o seu negócio, entendemos o problema e construímos exatamente o que você precisa — nem mais, nem menos. Adaptado ao seu orçamento desde o primeiro dia.",
                 "features": [
-                    "Arquitetura escalável",
-                    "Design UX/UI premium",
-                    "Integrações personalizadas",
-                    "Suporte contínuo"
+                    "Pesquisa gratuita de problemas",
+                    "Proposta ajustada ao seu orçamento",
+                    "Desenvolvimento iterativo e transparente",
+                    "Suporte pós-lançamento incluído"
                 ]
             },
             "managementSystem": {
-                "name": "Sistema de Gestão",
-                "tagline": "O coração do seu negócio",
-                "description": "Controle estoque, vendas e finanças em um só lugar. Uma ferramenta poderosa, mas fácil de usar para a vida cotidiana.",
+                "name": "Sistemas de Gestão",
+                "tagline": "Encomende e controle sem gastar mais",
+                "description": "Se você gerencia estoque, vendas, turnos ou finanças manualmente ou com ferramentas que não funcionam para você, construiremos algo que funcione para você.",
                 "features": [
-                    "Controle de estoque",
-                    "Relatórios financeiros",
-                    "Faturamento rápido",
-                    "Multi-filial"
+                    "Adaptado à sua operação real",
+                    "Sem licenças mensais externas",
+                    "Fácil de usar desde o primeiro dia",
+                    "Cresça com o seu negócio"
                 ]
             },
             "deliveryModule": {
                 "name": "Módulo de entrega",
-                "tagline": "Suas ordens, sob controle",
-                "description": "Gestão inteligente de pedidos domésticos, rastreamento em tempo real e otimização de rotas para sua frota.",
+                "tagline": "Pedidos sob controle, sem comissões",
+                "description": "Seu próprio sistema de pedidos domésticos, sem depender de plataformas que cobram porcentagem. Construímos de acordo com o seu modelo de negócio.",
                 "features": [
+                    "Canal de vendas próprio",
                     "Rastreamento em tempo real",
                     "App para entregadores",
-                    "Gerenciamento de zona",
-                    "Notificações push"
+                    "Sem comissões por pedido"
                 ]
             }
         }
     },
     "features": {
-        "badge": "Características",
-        "headline": "Tudo o que você precisa para crescer",
+        "badge": "Como trabalhamos",
+        "headline": "Um processo projetado para que você confie em cada etapa",
         "items": {
             "fast": {
-                "title": "Rápido como um raio",
-                "description": "Desenvolvimento ágil e implantação contínua para que seu software esteja pronto em tempo recorde."
+                "title": "Início rápido sem voltas",
+                "description": "Desde a primeira conversa até o primeiro protótipo em dias, não meses. Sabemos que seu tempo vale a pena."
             },
             "security": {
-                "title": "Segurança Empresarial",
-                "description": "Compatível com SOC 2 com criptografia de ponta a ponta por padrão."
+                "title": "Transparência total",
+                "description": "Mostramos o progresso em tempo real. Não há surpresas no orçamento ou nos tempos."
             },
             "global": {
-                "title": "Escala Global",
-                "description": "Arquiteturas preparadas para o mercado global, escalando de acordo com a demanda de seus usuários."
+                "title": "Subimos com você",
+                "description": "Construímos para hoje sem fechar o seu futuro. Seu software pode crescer à medida que sua empresa cresce."
             },
             "analytics": {
-                "title": "Análise em tempo real",
-                "description": "Monitore o desempenho com informações e métricas detalhadas."
+                "title": "Concentre-se no problema real",
+                "description": "Não vendemos tecnologia por tecnologia. Entendemos o que você quer resolver e vamos direto ao ponto."
             }
         }
     },
     "socialProof": {
         "metrics": {
-            "requests": "Usuários impactados",
-            "uptime": "SLA de disponibilidade",
-            "response": "Tempo médio de resposta",
-            "developers": "Projetos entregues"
+            "requests": "Projetos entregues",
+            "uptime": "Clientes recorrentes",
+            "response": "Prazo médio de entrega",
+            "developers": "Orçamentos cumpridos"
         }
     },
     "finalCta": {
-        "headline": "Pronto para transformar sua ideia em realidade?",
-        "subheadline": "Trabalhamos junto com você para criar o software que sua empresa precisa. Vamos começar a trabalhar hoje mesmo.",
-        "cta": "Vamos conversar sobre o seu projeto",
-        "noCreditCard": "Consulta sem compromisso"
+        "headline": "Você tem uma ideia mas não sabe por onde começar?",
+        "subheadline": "Diga-nos qual problema você quer resolver e quanto você tem para investir. Dizemos o que pode ser feito e como fazê-lo bem.",
+        "cta": "Vamos conversar sem compromisso",
+        "noCreditCard": "Primeira consulta gratuita"
     }
 }

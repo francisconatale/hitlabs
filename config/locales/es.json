@@ -9,103 +9,103 @@
         "allRightsReserved": "Todos los derechos reservados."
     },
     "layout": {
-        "titleSuffix": "El Futuro de la Innovación",
-        "description": "Construyendo la próxima generación de experiencias digitales"
+        "titleSuffix": "Software a tu medida",
+        "description": "Convertimos tu idea en software real, sin importar el presupuesto"
     },
     "navbar": {
-        "product": "Producto",
-        "features": "Características",
-        "pricing": "Precios"
+        "product": "Qué hacemos",
+        "features": "Cómo trabajamos",
+        "pricing": "Presupuesto"
     },
     "hero": {
-        "badge": "Ahora en beta pública",
-        "headlineMain": "Software que se mueve",
-        "headlineAccent": "a la velocidad del pensamiento",
-        "subheadline": "Diseñamos y desarrollamos software de alto impacto que impulsa tu negocio. Soluciones a medida para empresas que buscan innovar y escalar sin límites.",
-        "ctaPrimary": "Empieza gratis",
-        "ctaSecondary": "Ver demo",
-        "trustedBy": "Con la confianza de equipos en"
+        "badge": "Soluciones reales para problemas reales",
+        "headlineMain": "Tu idea hecha software,",
+        "headlineAccent": "a tu medida y tu presupuesto",
+        "subheadline": "Desarrollamos software personalizado pensado para resolver el problema específico de tu negocio. Sin costos inflados, sin features que no necesitás: solo lo que importa, bien hecho.",
+        "ctaPrimary": "Contanos tu idea",
+        "ctaSecondary": "Ver proyectos",
+        "trustedBy": "Construyendo soluciones para"
     },
     "scrollCanvas": {
-        "badge": "El futuro es ahora",
-        "build": "Construye",
-        "scale": "Escala",
-        "launch": "Lanza",
+        "badge": "Así trabajamos",
+        "build": "Escuchamos",
+        "scale": "Diseñamos",
+        "launch": "Entregamos",
         "scroll": "Haz scroll para explorar"
     },
     "products": {
-        "badge": "Productos",
-        "headline": "Todo lo que necesitas para escalar",
+        "badge": "Soluciones",
+        "headline": "Construimos lo que tu negocio necesita",
         "items": {
             "customSoftware": {
                 "name": "Software a Medida",
-                "tagline": "Soluciones únicas para problemas únicos",
-                "description": "Diseñamos y desarrollamos software personalizado que se adapta perfectamente a los procesos de tu empresa, escalando contigo.",
+                "tagline": "Tu problema, nuestra solución",
+                "description": "Analizamos tu negocio, entendemos el problema y construimos exactamente lo que necesitás — ni más, ni menos. Adaptado a tu presupuesto desde el día uno.",
                 "features": [
-                    "Arquitectura escalable",
-                    "Diseño UX/UI premium",
-                    "Integraciones personalizadas",
-                    "Soporte continuo"
+                    "Relevamiento gratuito del problema",
+                    "Propuesta ajustada a tu presupuesto",
+                    "Desarrollo iterativo y transparente",
+                    "Soporte post-lanzamiento incluido"
                 ]
             },
             "managementSystem": {
-                "name": "Sistema de Gestión",
-                "tagline": "El corazón de tu negocio",
-                "description": "Controla inventario, ventas y finanzas en un solo lugar. Una herramienta potente pero fácil de usar para el día a día.",
+                "name": "Sistemas de Gestión",
+                "tagline": "Orden y control sin gastar de más",
+                "description": "Si manejás stock, ventas, turnos o finanzas de forma manual o con herramientas que no te cierran, te construimos algo que sí funciona para vos.",
                 "features": [
-                    "Control de stock",
-                    "Reportes financieros",
-                    "Facturación rápida",
-                    "Multi-sucursal"
+                    "Adaptado a tu operación real",
+                    "Sin licencias mensuales externas",
+                    "Fácil de usar desde el primer día",
+                    "Crece con tu negocio"
                 ]
             },
             "deliveryModule": {
                 "name": "Módulo de Delivery",
-                "tagline": "Tus pedidos, bajo control",
-                "description": "Gestión inteligente de pedidos a domicilio, seguimiento en tiempo real y optimización de rutas para tu flota.",
+                "tagline": "Pedidos bajo control, sin comisiones",
+                "description": "Tu propio sistema de pedidos a domicilio, sin depender de plataformas que se llevan un porcentaje. Lo construimos según tu modelo de negocio.",
                 "features": [
+                    "Canal de ventas propio",
                     "Seguimiento en tiempo real",
                     "App para repartidores",
-                    "Gestión de zonas",
-                    "Notificaciones automáticas"
+                    "Sin comisiones por pedido"
                 ]
             }
         }
     },
     "features": {
-        "badge": "Características",
-        "headline": "Todo lo que necesitas para crecer",
+        "badge": "Cómo trabajamos",
+        "headline": "Un proceso pensado para que confíes en cada paso",
         "items": {
             "fast": {
-                "title": "Rápido como el rayo",
-                "description": "Desarrollo ágil y despliegue continuo para que tu software esté listo en tiempo récord."
+                "title": "Arranque rápido y sin vueltas",
+                "description": "Desde la primera charla hasta el primer prototipo en días, no en meses. Sabemos que tu tiempo vale."
             },
             "security": {
-                "title": "Seguridad Empresarial",
-                "description": "Cumple con SOC 2 con cifrado de extremo a extremo por defecto."
+                "title": "Transparencia total",
+                "description": "Te mostramos el avance en tiempo real. Sin sorpresas en el presupuesto ni en los tiempos."
             },
             "global": {
-                "title": "Escala Global",
-                "description": "Arquitecturas preparadas para el mercado global, escalando según la demanda de tus usuarios."
+                "title": "Escalamos con vos",
+                "description": "Construimos para hoy sin cerrarte el futuro. Tu software puede crecer a medida que crece tu negocio."
             },
             "analytics": {
-                "title": "Analíticas en Tiempo Real",
-                "description": "Monitoriza el rendimiento con información detallada y métricas."
+                "title": "Foco en el problema real",
+                "description": "No te vendemos tecnología por tecnología. Entendemos qué querés resolver y vamos directo al punto."
             }
         }
     },
     "socialProof": {
         "metrics": {
-            "requests": "Usuarios impactados",
-            "uptime": "SLA de disponibilidad",
-            "response": "Tiempo de respuesta promedio",
-            "developers": "Proyectos entregados"
+            "requests": "Proyectos entregados",
+            "uptime": "Clientes que volvieron",
+            "response": "Tiempo promedio de entrega",
+            "developers": "Presupuestos cumplidos"
         }
     },
     "finalCta": {
-        "headline": "¿Listo para transformar tu idea en realidad?",
-        "subheadline": "Trabajamos junto a vos para crear el software que tu empresa necesita. Empecemos a trabajar hoy mismo.",
-        "cta": "Hablemos de tu proyecto",
-        "noCreditCard": "Consulta sin compromiso"
+        "headline": "¿Tenés una idea pero no sabés por dónde arrancar?",
+        "subheadline": "Contanos qué problema querés resolver y cuánto tenés para invertir. Nosotros te decimos qué se puede hacer y cómo hacerlo bien.",
+        "cta": "Hablemos sin compromiso",
+        "noCreditCard": "Primera consulta gratis"
     }
 }

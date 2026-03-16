@@ -9,103 +9,103 @@
         "allRightsReserved": "All rights reserved."
     },
     "layout": {
-        "titleSuffix": "The Future of Innovation",
-        "description": "Building the next generation of digital experiences"
+        "titleSuffix": "Software tailored to you",
+        "description": "We turn your idea into real software, regardless of the budget"
     },
     "navbar": {
-        "product": "Product",
-        "features": "Characteristics",
-        "pricing": "Prices"
+        "product": "What we do",
+        "features": "How we work",
+        "pricing": "Budget"
     },
     "hero": {
-        "badge": "Now in public beta",
-        "headlineMain": "Software that moves",
-        "headlineAccent": "at the speed of thought",
-        "subheadline": "We design and develop high-impact software that drives your business. Custom solutions for companies looking to innovate and scale without limits.",
-        "ctaPrimary": "Get started for free",
-        "ctaSecondary": "See demo",
-        "trustedBy": "With the trust of teams in"
+        "badge": "Real solutions for real problems",
+        "headlineMain": "Your idea made software,",
+        "headlineAccent": "tailored to you and your budget",
+        "subheadline": "We develop customized software designed to solve the specific problem of your business. No inflated costs, no features you don't need: just what matters, done right.",
+        "ctaPrimary": "Tell us your idea",
+        "ctaSecondary": "See projects",
+        "trustedBy": "Building solutions for"
     },
     "scrollCanvas": {
-        "badge": "The future is now",
-        "build": "Build",
-        "scale": "Scale",
-        "launch": "Lance",
+        "badge": "This is how we work",
+        "build": "We listen",
+        "scale": "We design",
+        "launch": "We deliver",
         "scroll": "Scroll to explore"
     },
     "products": {
-        "badge": "Products",
-        "headline": "Everything you need to climb",
+        "badge": "Solutions",
+        "headline": "We build what your business needs",
         "items": {
             "customSoftware": {
                 "name": "Custom Software",
-                "tagline": "Unique solutions for unique problems",
-                "description": "We design and develop custom software that adapts perfectly to your company's processes, scaling with you.",
+                "tagline": "Your problem, our solution",
+                "description": "We analyze your business, understand the problem and build exactly what you need — no more, no less. Adapted to your budget from day one.",
                 "features": [
-                    "Scalable architecture",
-                    "Premium UX/UI Design",
-                    "Custom integrations",
-                    "Ongoing support"
+                    "Free problem survey",
+                    "Proposal adjusted to your budget",
+                    "Iterative and transparent development",
+                    "Post-launch support included"
                 ]
             },
             "managementSystem": {
-                "name": "Management System",
-                "tagline": "The heart of your business",
-                "description": "Control inventory, sales and finances in one place. A powerful but easy-to-use tool for everyday life.",
+                "name": "Management Systems",
+                "tagline": "Order and control without spending more",
+                "description": "If you manage stock, sales, shifts or finances manually or with tools that don't work for you, we will build something that works for you.",
                 "features": [
-                    "Stock control",
-                    "Financial reports",
-                    "Quick billing",
-                    "Multi-branch"
+                    "Adapted to your real operation",
+                    "No external monthly licenses",
+                    "Easy to use from day one",
+                    "Grow with your business"
                 ]
             },
             "deliveryModule": {
                 "name": "Delivery Module",
-                "tagline": "Your orders, under control",
-                "description": "Intelligent management of home orders, real-time tracking and route optimization for your fleet.",
+                "tagline": "Orders under control, without commissions",
+                "description": "Your own home ordering system, without depending on platforms that take a percentage. We build it according to your business model.",
                 "features": [
+                    "Own sales channel",
                     "Real-time tracking",
                     "App for delivery people",
-                    "Zone management",
-                    "Push notifications"
+                    "No commissions per order"
                 ]
             }
         }
     },
     "features": {
-        "badge": "Characteristics",
-        "headline": "Everything you need to grow",
+        "badge": "How we work",
+        "headline": "A process designed so that you trust every step",
         "items": {
             "fast": {
-                "title": "Fast as lightning",
-                "description": "Agile development and continuous deployment so your software is ready in record time."
+                "title": "Quick start without laps",
+                "description": "From the first talk to the first prototype in days, not months. We know that your time is worth it."
             },
             "security": {
-                "title": "Business Security",
-                "description": "SOC 2 compliant with end-to-end encryption by default."
+                "title": "Full transparency",
+                "description": "We show you the progress in real time. No surprises in the budget or in the times."
             },
             "global": {
-                "title": "Global Scale",
-                "description": "Architectures prepared for the global market, scaling according to the demand of your users."
+                "title": "We climb with you",
+                "description": "We build for today without closing your future. Your software can grow as your business grows."
             },
             "analytics": {
-                "title": "Real Time Analytics",
-                "description": "Monitor performance with detailed information and metrics."
+                "title": "Focus on the real problem",
+                "description": "We do not sell you technology for technology. We understand what you want to solve and we get straight to the point."
             }
         }
     },
     "socialProof": {
         "metrics": {
-            "requests": "Impacted users",
-            "uptime": "Availability SLA",
-            "response": "Average response time",
-            "developers": "Projects delivered"
+            "requests": "Projects delivered",
+            "uptime": "Returning customers",
+            "response": "Average delivery time",
+            "developers": "Budgets met"
         }
     },
     "finalCta": {
-        "headline": "Ready to turn your idea into reality?",
-        "subheadline": "We work with you to create the software your company needs. Let's start working today.",
-        "cta": "Let's talk about your project",
-        "noCreditCard": "Consultation without commitment"
+        "headline": "Do you have an idea but don't know where to start?",
+        "subheadline": "Tell us what problem you want to solve and how much you have to invest. We tell you what can be done and how to do it well.",
+        "cta": "Let's talk without obligation",
+        "noCreditCard": "Free first consultation"
     }
 }

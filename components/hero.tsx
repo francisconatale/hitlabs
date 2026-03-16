@@ -16,11 +16,6 @@ export function Hero({ heroT }: HeroProps) {
       <div className="absolute top-1/2 left-1/2 -z-10 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-[120px]" />
 
       <div className="mx-auto max-w-4xl text-center">
-        <div className="mb-6 inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium text-primary sm:text-sm animate-in fade-in slide-in-from-top-4 duration-1000">
-          <span className="mr-2 flex h-2 w-2 rounded-full bg-primary animate-pulse" />
-          {heroT.badge}
-        </div>
-
         <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl xl:text-8xl animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
           {heroT.headlineMain} <br />
           <span className="bg-gradient-to-r from-primary to-cyan-400 bg-clip-text text-transparent">
