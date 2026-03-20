@@ -18,7 +18,7 @@ export function ProductsSection({ productsT, commonT }: ProductsSectionProps) {
       description: productsT.items.customSoftware.description,
       features: productsT.items.customSoftware.features,
       image: "/home/francisco/.gemini/antigravity/brain/8ca42233-7f3e-4301-9450-44c5d24d5c97/custom_software_showcase_1773627137694.png",
-      accent: "bg-red-500",
+      accent: "bg-[#8a64ff]",
     },
     {
       id: "managementSystem",
@@ -27,7 +27,7 @@ export function ProductsSection({ productsT, commonT }: ProductsSectionProps) {
       description: productsT.items.managementSystem.description,
       features: productsT.items.managementSystem.features,
       image: "/home/francisco/.gemini/antigravity/brain/8ca42233-7f3e-4301-9450-44c5d24d5c97/management_system_dashboard_1773627154294.png",
-      accent: "bg-rose-500",
+      accent: "bg-[#b4a0ff]",
     },
     {
       id: "deliveryModule",
@@ -36,7 +36,7 @@ export function ProductsSection({ productsT, commonT }: ProductsSectionProps) {
       description: productsT.items.deliveryModule.description,
       features: productsT.items.deliveryModule.features,
       image: "/home/francisco/.gemini/antigravity/brain/8ca42233-7f3e-4301-9450-44c5d24d5c97/delivery_app_mockup_1773627175789.png",
-      accent: "bg-red-400",
+      accent: "bg-[#9a74ff]",
     },
   ]
 

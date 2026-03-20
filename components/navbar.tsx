@@ -36,14 +36,14 @@ export function Navbar({ navT, commonT, currentLocale }: NavbarProps) {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-        ? "bg-background/80 backdrop-blur-lg border-b border-border"
+        ? "bg-black/80 backdrop-blur-lg border-b border-[#2a1a40]/50"
         : "bg-transparent"
         }`}
     >
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold tracking-tight">
-          {siteConfig.name.toUpperCase()}<span className="text-primary">.</span>
+        <Link href="/" className="text-xl font-bold tracking-tight text-white glow-text-subtle">
+          {siteConfig.name.toUpperCase()}<span className="text-[#b4a0ff]">.</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -52,7 +52,7 @@ export function Navbar({ navT, commonT, currentLocale }: NavbarProps) {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm font-medium text-[#9080b0] transition-colors hover:text-[#b4a0ff] hover:glow-text-subtle"
             >
               {link.label}
             </Link>
@@ -62,10 +62,10 @@ export function Navbar({ navT, commonT, currentLocale }: NavbarProps) {
         {/* CTA */}
         <div className="hidden items-center gap-4 md:flex">
           <LanguageSwitcher currentLocale={currentLocale} />
-          <Button variant="ghost" size="sm">
+          <Button variant="ghost" size="sm" className="text-[#b4a0ff] hover:text-white hover:bg-[#1a1625]">
             {commonT.signIn}
           </Button>
-          <Button size="sm">{commonT.getStarted}</Button>
+          <Button size="sm" className="bg-[#8a64ff] hover:bg-[#9a74ff] text-white glow-box-subtle">{commonT.getStarted}</Button>
         </div>
 
         {/* Mobile menu button */}
@@ -83,27 +83,27 @@ export function Navbar({ navT, commonT, currentLocale }: NavbarProps) {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="border-t border-border bg-background/95 backdrop-blur-lg md:hidden">
+        <div className="border-t border-[#2a1a40]/50 bg-black/95 backdrop-blur-lg md:hidden">
           <div className="flex flex-col gap-4 px-6 py-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-muted-foreground"
+                className="text-sm font-medium text-[#9080b0] hover:text-[#b4a0ff]"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
-            <div className="flex flex-col gap-2 pt-4 border-t border-border">
+            <div className="flex flex-col gap-2 pt-4 border-t border-[#2a1a40]/50">
               <div className="flex items-center justify-between py-2">
-                <span className="text-sm font-medium">Language</span>
+                <span className="text-sm font-medium text-white">Language</span>
                 <LanguageSwitcher currentLocale={currentLocale} />
               </div>
-              <Button variant="ghost" size="sm">
+              <Button variant="ghost" size="sm" className="text-[#b4a0ff] hover:text-white hover:bg-[#1a1625]">
                 {commonT.signIn}
               </Button>
-              <Button size="sm">{commonT.getStarted}</Button>
+              <Button size="sm" className="bg-[#8a64ff] hover:bg-[#9a74ff] text-white glow-box-subtle">{commonT.getStarted}</Button>
             </div>
           </div>
         </div>
