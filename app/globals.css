@@ -4,74 +4,79 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-  --card: #f7f7f7;
-  --card-foreground: #0a0a0a;
-  --popover: #ffffff;
-  --popover-foreground: #0a0a0a;
-  --primary: #ff1a1a;
-  --primary-foreground: #ffffff;
-  --secondary: #f0f0f0;
-  --secondary-foreground: #0a0a0a;
-  --muted: #f4f4f4;
-  --muted-foreground: #737373;
-  --accent: #ff1a1a;
+  --background: #000000;
+  --foreground: #ffffff;
+  --card: #0a0a12;
+  --card-foreground: #ffffff;
+  --popover: #080810;
+  --popover-foreground: #ffffff;
+  --primary: #b4a0ff;
+  --primary-foreground: #000000;
+  --secondary: #12101a;
+  --secondary-foreground: #ffffff;
+  --muted: #1a1625;
+  --muted-foreground: #9080b0;
+  --accent: #8a64ff;
   --accent-foreground: #ffffff;
-  --destructive: #cc0000;
+  --destructive: #ff4466;
   --destructive-foreground: #ffffff;
-  --border: #e5e5e5;
-  --input: #f0f0f0;
-  --ring: #ff1a1a;
-  --chart-1: oklch(0.55 0.22 25);
-  --chart-2: oklch(0.60 0.18 35);
-  --chart-3: oklch(0.65 0.20 15);
-  --chart-4: oklch(0.62 0.25 30);
-  --chart-5: oklch(0.68 0.24 20);
+  --border: #2a1a40;
+  --input: #12101a;
+  --ring: #b4a0ff;
+  --chart-1: oklch(0.65 0.20 280);
+  --chart-2: oklch(0.60 0.18 290);
+  --chart-3: oklch(0.70 0.22 270);
+  --chart-4: oklch(0.55 0.25 285);
+  --chart-5: oklch(0.75 0.20 275);
   --radius: 0.5rem;
-  --sidebar: oklch(0.97 0 0);
-  --sidebar-foreground: oklch(0.12 0 0);
-  --sidebar-primary: oklch(0.55 0.22 25);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.93 0 0);
-  --sidebar-accent-foreground: oklch(0.12 0 0);
-  --sidebar-border: oklch(0.88 0 0);
-  --sidebar-ring: oklch(0.55 0.22 25);
+  --sidebar: #080810;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #b4a0ff;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #1a1625;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #2a1a40;
+  --sidebar-ring: #b4a0ff;
+  
+  /* Glow effect custom properties */
+  --glow-primary: rgba(180, 160, 255, 0.5);
+  --glow-secondary: rgba(138, 100, 255, 0.3);
+  --glow-accent: rgba(138, 43, 226, 0.4);
 }
 
 .dark {
-  --background: #0a0a0b;
+  --background: #000000;
   --foreground: #ffffff;
-  --card: #130a0a;
+  --card: #0a0a12;
   --card-foreground: #ffffff;
-  --popover: #100808;
+  --popover: #080810;
   --popover-foreground: #ffffff;
-  --primary: #ff1a1a;
-  --primary-foreground: #ffffff;
-  --secondary: #1c1010;
+  --primary: #b4a0ff;
+  --primary-foreground: #000000;
+  --secondary: #12101a;
   --secondary-foreground: #ffffff;
-  --muted: #221414;
-  --muted-foreground: #8a6e6e;
-  --accent: #ff1a1a;
+  --muted: #1a1625;
+  --muted-foreground: #9080b0;
+  --accent: #8a64ff;
   --accent-foreground: #ffffff;
-  --destructive: #cc0000;
+  --destructive: #ff4466;
   --destructive-foreground: #ffffff;
-  --border: #2e1515;
-  --input: #1c1010;
-  --ring: #ff1a1a;
-  --chart-1: oklch(0.55 0.22 25);
-  --chart-2: oklch(0.65 0.18 35);
-  --chart-3: oklch(0.75 0.20 15);
-  --chart-4: oklch(0.62 0.25 30);
-  --chart-5: oklch(0.68 0.24 20);
-  --sidebar: oklch(0.08 0.02 20);
-  --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.55 0.22 25);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.15 0.04 25);
-  --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(0.22 0.04 25);
-  --sidebar-ring: oklch(0.55 0.22 25);
+  --border: #2a1a40;
+  --input: #12101a;
+  --ring: #b4a0ff;
+  --chart-1: oklch(0.65 0.20 280);
+  --chart-2: oklch(0.60 0.18 290);
+  --chart-3: oklch(0.70 0.22 270);
+  --chart-4: oklch(0.55 0.25 285);
+  --chart-5: oklch(0.75 0.20 275);
+  --sidebar: #080810;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #b4a0ff;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #1a1625;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #2a1a40;
+  --sidebar-ring: #b4a0ff;
 }
 
 @theme inline {
@@ -122,5 +127,42 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Magic Glow Effect Utilities */
+@layer utilities {
+  .glow-text {
+    text-shadow: 0 0 40px var(--glow-primary), 0 0 80px var(--glow-secondary);
+  }
+  
+  .glow-text-subtle {
+    text-shadow: 0 0 20px var(--glow-primary), 0 0 40px var(--glow-secondary);
+  }
+  
+  .glow-box {
+    box-shadow: 0 0 30px var(--glow-primary), 0 0 60px var(--glow-secondary), inset 0 0 20px rgba(180, 160, 255, 0.05);
+  }
+  
+  .glow-box-subtle {
+    box-shadow: 0 0 15px var(--glow-secondary), 0 0 30px var(--glow-accent);
+  }
+  
+  .glow-border {
+    border-color: rgba(180, 160, 255, 0.3);
+    box-shadow: 0 0 10px rgba(138, 100, 255, 0.2), inset 0 0 10px rgba(138, 100, 255, 0.05);
+  }
+  
+  .glow-border-hover:hover {
+    border-color: rgba(180, 160, 255, 0.6);
+    box-shadow: 0 0 20px rgba(138, 100, 255, 0.4), inset 0 0 15px rgba(138, 100, 255, 0.1);
+  }
+  
+  .bg-glow-gradient {
+    background: radial-gradient(ellipse at center, rgba(138, 43, 226, 0.15) 0%, rgba(75, 0, 130, 0.05) 50%, transparent 70%);
+  }
+  
+  .bg-glow-gradient-top {
+    background: radial-gradient(ellipse at top, rgba(138, 43, 226, 0.2) 0%, rgba(75, 0, 130, 0.05) 40%, transparent 60%);
   }
 }
