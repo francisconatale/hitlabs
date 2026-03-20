@@ -1,3 +1,6 @@
+"use client"
+
+import { motion } from "framer-motion"
 import { Zap, Shield, Globe, BarChart3 } from "lucide-react"
 import { TranslationDict } from "@/lib/i18n"
 
@@ -12,56 +15,80 @@ export function FeaturesGrid({ featuresT }: FeaturesGridProps) {
       icon: Zap,
       title: featuresT.items.fast.title,
       description: featuresT.items.fast.description,
+      num: "01"
     },
     {
       icon: Shield,
       title: featuresT.items.security.title,
       description: featuresT.items.security.description,
+      num: "02"
     },
     {
       icon: Globe,
       title: featuresT.items.global.title,
       description: featuresT.items.global.description,
+      num: "03"
     },
     {
       icon: BarChart3,
       title: featuresT.items.analytics.title,
       description: featuresT.items.analytics.description,
+      num: "04"
     },
   ]
 
   return (
-    <section id="features" className="relative bg-black py-16 sm:py-20 lg:py-24 overflow-hidden">
-      {/* Background glow */}
-      <div className="absolute top-1/2 left-1/2 -z-0 h-[600px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[rgba(138,43,226,0.08)] blur-[150px]" />
-      
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="mb-10 sm:mb-12 lg:mb-16 text-center">
-          <p className="mb-2 text-xs sm:text-sm font-medium uppercase tracking-widest text-[#b4a0ff] glow-text-subtle">
-            {featuresT.badge}
-          </p>
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl text-white glow-text">
-            {featuresT.headline}
-          </h2>
+    <section id="features" className="relative px-6 md:px-12 lg:px-20 py-16 sm:py-20 lg:py-24 overflow-hidden">
+      {/* Background large text */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
+        <span className="font-[family-name:var(--font-display)] text-[20vw] text-primary/5 tracking-tighter whitespace-nowrap">
+          PLUG
+        </span>
+      </div>
+
+      {/* Section label */}
+      <div className="relative z-10">
+        <div className="flex items-center gap-4 mb-12">
+          <span className="text-xs tracking-widest text-primary uppercase">{featuresT.badge}</span>
+          <div className="w-24 h-px bg-primary/30" />
         </div>
 
-        <div className="grid gap-4 sm:gap-6 lg:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((feature) => (
-            <div
+        <motion.h2
+          className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-6xl text-primary tracking-tight leading-none mb-12 lg:mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          {featuresT.headline}
+        </motion.h2>
+
+        <div className="grid gap-8 sm:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          {features.map((feature, index) => (
+            <motion.div
               key={feature.title}
-              className="group rounded-lg border border-[#2a1a40] bg-[#0a0a12]/80 p-4 sm:p-6 transition-all hover:border-[#b4a0ff]/50 glow-border-hover backdrop-blur-sm"
+              className="group border border-border bg-card p-6 transition-all hover:border-primary/50"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <div className="mb-3 sm:mb-4 inline-flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg bg-[#8a64ff]/20 text-[#b4a0ff]">
-                <feature.icon className="h-4 w-4 sm:h-5 sm:w-5" />
+              <span className="font-[family-name:var(--font-display)] text-4xl text-primary/15">{feature.num}</span>
+              <div className="mt-3 mb-3 inline-flex h-10 w-10 items-center justify-center border border-primary/20 text-primary">
+                <feature.icon className="h-5 w-5" />
               </div>
-              <h3 className="mb-1.5 sm:mb-2 text-sm sm:text-base font-semibold text-white">{feature.title}</h3>
-              <p className="text-xs sm:text-sm text-[#9080b0]">
+              <h3 className="font-[family-name:var(--font-display)] text-xl tracking-wide text-primary mb-2">{feature.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 {feature.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
+
+      {/* Decorative corner elements */}
+      <div className="absolute bottom-0 left-0 w-32 h-32 border-l-2 border-b-2 border-primary/10" />
+      <div className="absolute top-0 right-0 w-32 h-32 border-r-2 border-t-2 border-primary/10" />
     </section>
   )
 }

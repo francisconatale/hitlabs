@@ -1,13 +1,24 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Bebas_Neue, Inter, Caveat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { LanguageProvider } from '@/components/language-provider'
 import { dictionaries, defaultLocale } from '@/lib/i18n'
 
+const bebasNeue = Bebas_Neue({
+  weight: '400',
+  subsets: ["latin"],
+  variable: '--font-display'
+});
+
 const inter = Inter({
   subsets: ["latin"],
   variable: '--font-sans'
+});
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  variable: '--font-script'
 });
 
 export const metadata: Metadata = {
@@ -21,8 +32,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang={defaultLocale} className="dark">
-      <body className={`${inter.variable} bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary`}>
+    <html lang={defaultLocale}>
+      <body className={`${bebasNeue.variable} ${inter.variable} ${caveat.variable} font-sans bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>
