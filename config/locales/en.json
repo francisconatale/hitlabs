@@ -13,6 +13,7 @@
         "description": "We turn your idea into real software, regardless of the budget"
     },
     "navbar": {
+        "home": "Home",
         "product": "Products",
         "features": "How we work",
         "pricing": "Budget",

@@ -13,6 +13,7 @@
         "description": "Convertimos tu idea en software real, sin importar el presupuesto"
     },
     "navbar": {
+        "home": "Inicio",
         "product": "Productos",
         "features": "Cómo trabajamos",
         "pricing": "Presupuesto",

@@ -13,6 +13,7 @@
         "description": "Transformamos sua ideia em software real, independente do orçamento"
     },
     "navbar": {
+        "home": "Início",
         "product": "Produtos",
         "features": "Como trabalhamos",
         "pricing": "Orçamento",

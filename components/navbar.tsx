@@ -17,6 +17,7 @@ interface NavbarProps {
 export function Navbar({ navT, commonT, currentLocale }: NavbarProps) {
 
   const navLinks = [
+    { href: "/", label: navT.home },
     { href: "/products", label: navT.product },
     { href: "/referrals", label: navT.referidos },
   ]
