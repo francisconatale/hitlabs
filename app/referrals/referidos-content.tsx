@@ -282,7 +282,7 @@ export function ReferidosContent({ t }: { t: any }) {
          </motion.div>
 
          <div className="mt-16">
-            <a href="#" className="text-[10px] text-muted-foreground uppercase tracking-widest hover:text-primary transition-colors underline underline-offset-4 decoration-border">
+            <a href="/refferals.pdf" target="_blank" rel="noopener noreferrer" className="text-[10px] text-muted-foreground uppercase tracking-widest hover:text-primary transition-colors underline underline-offset-4 decoration-border">
               {t.legalLink}
             </a>
          </div>
