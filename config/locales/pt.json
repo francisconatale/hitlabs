@@ -1,7 +1,6 @@
 {
     "common": {
         "getStarted": "Começar",
-        "signIn": "Conecte-se",
         "learnMore": "Saber mais",
         "contact": "Contato",
         "privacy": "Privacidade",
@@ -205,5 +204,18 @@
     "team": {
         "headline": "Nossa Equipe",
         "subheadline": "Conheça as pessoas por trás do software. Somos uma equipe pequena, mas poderosa, de criadores, desenvolvedores e designers."
+    },
+    "contact": {
+        "headline": "Entre em contato",
+        "subheadline": "Conte-nos sobre o seu projeto ou apenas diga olá. Adoraríamos ouvir de você.",
+        "form": {
+            "name": "Nome",
+            "email": "E-mail",
+            "message": "Mensagem",
+            "send": "Enviar Mensagem",
+            "sending": "Enviando...",
+            "success": "Mensagem enviada! Entraremos em contato em breve.",
+            "error": "Falha ao enviar a mensagem. Por favor, tente novamente."
+        }
     }
 }

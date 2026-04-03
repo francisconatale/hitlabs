@@ -2,8 +2,9 @@ import { Navbar } from "@/components/navbar"
 import { SiteFooter } from "@/components/site-footer"
 import { getServerLocale } from "@/lib/i18n-server"
 import { getTranslation } from "@/lib/i18n"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Github, Linkedin, Mail } from "lucide-react"
 
 export default async function TeamPage() {
     const locale = await getServerLocale()
@@ -16,7 +17,12 @@ export default async function TeamPage() {
             role: "Founder & Full Stack Developer",
             bio: "Passionate about building scalable software solutions and bringing ideas to life.",
             initials: "FN",
-            image: "/natale.png"
+            image: "/natale.png",
+            socials: {
+                github: "https://github.com/francisconatale",
+                linkedin: "https://linkedin.com/in/1francisco",
+                email: "mailto:francisconatale9@gmail.com"
+            }
         }
     ]
 
@@ -35,20 +41,31 @@ export default async function TeamPage() {
 
                 <div className="flex flex-wrap justify-center gap-8">
                     {teamMembers.map((member) => (
-                        <Card key={member.id} className="w-full sm:max-w-sm border border-border/50 bg-background/50 backdrop-blur-sm overflow-hidden hover:border-primary/50 transition-colors duration-300">
+                        <Card key={member.id} className="w-full sm:max-w-sm border border-border/50 bg-background/50 backdrop-blur-sm overflow-hidden hover:border-primary/50 transition-all duration-300 group">
                             <CardHeader className="pb-4 items-center text-center">
-                                <Avatar className="h-24 w-24 mb-4 border-2 border-primary/20">
+                                <Avatar className="h-24 w-24 mb-4 border-2 border-primary/20 group-hover:border-primary/50 transition-colors">
                                     <AvatarImage src={member.image} alt={member.name} />
                                     <AvatarFallback>{member.initials}</AvatarFallback>
                                 </Avatar>
                                 <CardTitle className="text-2xl font-bold">{member.name}</CardTitle>
                                 <CardDescription className="text-primary font-medium">{member.role}</CardDescription>
                             </CardHeader>
-                            <CardContent className="text-center">
-                                <p className="text-muted-foreground text-sm">
+                            <CardContent className="text-center pb-2">
+                                <p className="text-muted-foreground text-sm leading-relaxed">
                                     {member.bio}
                                 </p>
                             </CardContent>
+                            <CardFooter className="flex justify-center gap-4 pt-4 pb-8">
+                                <a href={member.socials.github} target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-primary transition-colors">
+                                    <Github className="h-5 w-5" />
+                                </a>
+                                <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-primary transition-colors">
+                                    <Linkedin className="h-5 w-5" />
+                                </a>
+                                <a href={member.socials.email} className="p-2 text-muted-foreground hover:text-primary transition-colors">
+                                    <Mail className="h-5 w-5" />
+                                </a>
+                            </CardFooter>
                         </Card>
                     ))}
                 </div>

@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { TranslationDict } from "@/lib/i18n"
@@ -46,13 +47,15 @@ export function FinalCTA({ finalT }: FinalCTAProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <Button
-            size="lg"
-            className="border-2 border-primary bg-primary text-primary-foreground hover:bg-transparent hover:text-primary text-xs font-bold uppercase tracking-widest px-12 py-7 h-auto transition-all"
-          >
-            {finalT.cta}
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link href="/contact">
+            <Button
+              size="lg"
+              className="border-2 border-primary bg-primary text-primary-foreground hover:bg-transparent hover:text-primary text-xs font-bold uppercase tracking-widest px-12 py-7 h-auto transition-all"
+            >
+              {finalT.cta}
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
           <p className="text-[10px] text-muted-foreground uppercase tracking-widest mt-4">
             {finalT.noCreditCard}
           </p>

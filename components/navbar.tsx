@@ -66,12 +66,14 @@ export function Navbar({ navT, commonT, currentLocale }: NavbarProps) {
         {/* CTA */}
         <div className="hidden items-center gap-6 md:flex">
           <LanguageSwitcher currentLocale={currentLocale} />
-          <Button
-            size="sm"
-            className="border border-primary bg-transparent hover:bg-primary hover:text-primary-foreground text-primary text-[10px] font-bold uppercase tracking-widest h-9 px-6 transition-all duration-300"
-          >
-            {commonT.getStarted}
-          </Button>
+          <Link href="/contact">
+            <Button
+              size="sm"
+              className="border border-primary bg-transparent hover:bg-primary hover:text-primary-foreground text-primary text-[10px] font-bold uppercase tracking-widest h-9 px-6 transition-all duration-300"
+            >
+              {commonT.getStarted}
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -107,12 +109,11 @@ export function Navbar({ navT, commonT, currentLocale }: NavbarProps) {
                 <LanguageSwitcher currentLocale={currentLocale} />
               </div>
               <div className="flex flex-col gap-3">
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/5 uppercase text-xs font-bold tracking-widest py-6">
-                  {commonT.signIn}
-                </Button>
-                <Button className="w-full bg-primary text-primary-foreground uppercase text-xs font-bold tracking-widest py-6">
-                  {commonT.getStarted}
-                </Button>
+                <Link href="/contact" className="w-full">
+                  <Button className="w-full bg-primary text-primary-foreground uppercase text-xs font-bold tracking-widest py-6">
+                    {commonT.getStarted}
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

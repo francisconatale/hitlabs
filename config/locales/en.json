@@ -1,7 +1,6 @@
 {
     "common": {
         "getStarted": "Begin",
-        "signIn": "Login",
         "learnMore": "Learn more",
         "contact": "Contact",
         "privacy": "Privacy",
@@ -205,5 +204,18 @@
     "team": {
         "headline": "Our Team",
         "subheadline": "Meet the people behind the software. We are a small but mighty team of creators, developers, and designers."
+    },
+    "contact": {
+        "headline": "Get in touch",
+        "subheadline": "Tell us about your project or just say hi. We'd love to hear from you.",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "send": "Send Message",
+            "sending": "Sending...",
+            "success": "Message sent! We'll get back to you shortly.",
+            "error": "Failed to send message. Please try again."
+        }
     }
 }

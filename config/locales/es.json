@@ -214,5 +214,18 @@
     "team": {
         "headline": "Nuestro Equipo",
         "subheadline": "Conocé a las personas detrás del software. Somos un equipo pequeño pero poderoso de creadores, desarrolladores y diseñadores."
+    },
+    "contact": {
+        "headline": "Hablemos",
+        "subheadline": "Contanos sobre tu proyecto o simplemente saludanos. Nos encantaría saber de vos.",
+        "form": {
+            "name": "Nombre",
+            "email": "Email",
+            "message": "Mensaje",
+            "send": "Enviar Mensaje",
+            "sending": "Enviando...",
+            "success": "¡Mensaje enviado! Te responderemos a la brevedad.",
+            "error": "Error al enviar el mensaje. Por favor intenta de nuevo."
+        }
     }
 }

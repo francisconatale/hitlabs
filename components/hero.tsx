@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { TranslationDict } from "@/lib/i18n"
@@ -117,13 +118,15 @@ export function Hero({ heroT }: HeroProps) {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
         >
-          <Button
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-transparent hover:text-primary border-2 border-primary text-[11px] font-bold uppercase tracking-[0.2em] px-12 py-7 h-auto transition-all duration-500 rounded-none"
-          >
-            {heroT.ctaPrimary}
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link href="/contact">
+            <Button
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-transparent hover:text-primary border-2 border-primary text-[11px] font-bold uppercase tracking-[0.2em] px-12 py-7 h-auto transition-all duration-500 rounded-none"
+            >
+              {heroT.ctaPrimary}
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </motion.div>
       </div>
 
