@@ -17,7 +17,8 @@
         "product": "Produtos",
         "features": "Como trabalhamos",
         "pricing": "Orçamento",
-        "referidos": "Indicações"
+        "referidos": "Indicações",
+        "team": "Equipe"
     },
     "hero": {
         "badge": "Soluções reais para problemas reais",
@@ -200,5 +201,9 @@
             "ctaSecondary": "Fale conosco"
         },
         "legalLink": "Termos Completos do Programa"
+    },
+    "team": {
+        "headline": "Nossa Equipe",
+        "subheadline": "Conheça as pessoas por trás do software. Somos uma equipe pequena, mas poderosa, de criadores, desenvolvedores e designers."
     }
 }

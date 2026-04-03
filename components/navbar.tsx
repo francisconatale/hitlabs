@@ -20,6 +20,7 @@ export function Navbar({ navT, commonT, currentLocale }: NavbarProps) {
     { href: "/", label: navT.home },
     { href: "/products", label: navT.product },
     { href: "/referrals", label: navT.referidos },
+    { href: "/team", label: navT.team },
   ]
 
   const [isScrolled, setIsScrolled] = useState(false)

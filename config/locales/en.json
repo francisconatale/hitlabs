@@ -17,7 +17,8 @@
         "product": "Products",
         "features": "How we work",
         "pricing": "Budget",
-        "referidos": "Referrals"
+        "referidos": "Referrals",
+        "team": "Team"
     },
     "hero": {
         "badge": "Real solutions for real problems",
@@ -200,5 +201,9 @@
             "ctaSecondary": "Talk to us"
         },
         "legalLink": "Full Referral Program Terms"
+    },
+    "team": {
+        "headline": "Our Team",
+        "subheadline": "Meet the people behind the software. We are a small but mighty team of creators, developers, and designers."
     }
 }

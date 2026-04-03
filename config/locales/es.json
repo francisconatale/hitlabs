@@ -17,7 +17,8 @@
         "product": "Productos",
         "features": "Cómo trabajamos",
         "pricing": "Presupuesto",
-        "referidos": "Referidos"
+        "referidos": "Referidos",
+        "team": "Equipo"
     },
     "hero": {
         "badge": "Soluciones reales para problemas reales",
@@ -200,5 +201,9 @@
             "ctaSecondary": "Hablar con nosotros"
         },
         "legalLink": "Términos completos del programa de referidos"
+    },
+    "team": {
+        "headline": "Nuestro Equipo",
+        "subheadline": "Conocé a las personas detrás del software. Somos un equipo pequeño pero poderoso de creadores, desarrolladores y diseñadores."
     }
 }
