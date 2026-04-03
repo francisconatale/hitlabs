@@ -1,7 +1,6 @@
 {
     "common": {
         "getStarted": "Empezar",
-        "signIn": "Iniciar sesión",
         "learnMore": "Saber más",
         "contact": "Contacto",
         "privacy": "Privacidad",
@@ -144,7 +143,11 @@
         "earnings": {
             "badge": "Cuánto podés ganar",
             "headline": "Comisiones claras",
-            "tableHeaders": ["Tipo", "Qué hacés", "Comisión"],
+            "tableHeaders": [
+                "Tipo",
+                "Qué hacés",
+                "Comisión"
+            ],
             "rows": [
                 {
                     "type": "Referido asistido",
@@ -190,8 +193,14 @@
             "saleLabel": "Venta:",
             "saleAmount": "$300",
             "commissions": [
-                { "label": "Comisión 15%", "amount": "$45" },
-                { "label": "Comisión 30%", "amount": "$90" }
+                {
+                    "label": "Comisión 15%",
+                    "amount": "$45"
+                },
+                {
+                    "label": "Comisión 30%",
+                    "amount": "$90"
+                }
             ],
             "installmentsNote": "Si el cliente paga en cuotas, la comisión se paga proporcionalmente."
         },

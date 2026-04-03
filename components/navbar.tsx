@@ -67,13 +67,6 @@ export function Navbar({ navT, commonT, currentLocale }: NavbarProps) {
         <div className="hidden items-center gap-6 md:flex">
           <LanguageSwitcher currentLocale={currentLocale} />
           <Button
-            variant="ghost"
-            size="sm"
-            className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground hover:text-primary hover:bg-transparent"
-          >
-            {commonT.signIn}
-          </Button>
-          <Button
             size="sm"
             className="border border-primary bg-transparent hover:bg-primary hover:text-primary-foreground text-primary text-[10px] font-bold uppercase tracking-widest h-9 px-6 transition-all duration-300"
           >

@@ -9,6 +9,11 @@ interface SiteFooterProps {
   commonT: TranslationDict['common']
 }
 
+const socialLinks = [
+  { href: "https://instagram.com/hit_labs", label: "IG" },
+  { href: "https://linkedin.com/company/hitslabs", label: "LI" },
+]
+
 export function SiteFooter({ commonT }: SiteFooterProps) {
   return (
     <footer className="relative px-6 md:px-12 lg:px-20 py-20 border-t border-border">
@@ -30,10 +35,10 @@ export function SiteFooter({ commonT }: SiteFooterProps) {
             <div className="w-8 h-px bg-border" />
           </div>
           <div className="mt-4 flex gap-6">
-            {["TW", "IG", "LI", "GH"].map((social, index) => (
+            {socialLinks.map((social, index) => (
               <motion.a
-                key={social}
-                href="#"
+                key={social.label}
+                href={social.href}
                 className="text-xs tracking-widest text-primary hover:text-muted-foreground transition-colors"
                 whileHover={{ y: -2 }}
                 initial={{ opacity: 0, y: 10 }}
@@ -41,7 +46,7 @@ export function SiteFooter({ commonT }: SiteFooterProps) {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
               >
-                {social}
+                {social.label}
               </motion.a>
             ))}
           </div>
