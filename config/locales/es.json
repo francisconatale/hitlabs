@@ -227,5 +227,17 @@
             "success": "¡Mensaje enviado! Te responderemos a la brevedad.",
             "error": "Error al enviar el mensaje. Por favor intenta de nuevo."
         }
+    },
+    "caseUseProject": {
+        "location": "Ubicación",
+        "features": "Características",
+        "liveProject": "Proyecto en vivo",
+        "preview": "Visitar",
+        "swipe": "Desliza para ver más"
+    },
+    "worksList": {
+        "title": "Proyectos Seleccionados",
+        "subtitle": "Software & Soluciones",
+        "explore": "Ver Caso de Estudio"
     }
 }

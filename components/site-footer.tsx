@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import siteConfig from '@/config/site.json'
 import { TranslationDict } from "@/lib/i18n"
 
@@ -17,9 +18,15 @@ export function SiteFooter({ commonT }: SiteFooterProps) {
       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center gap-8">
         <Link
           href="/"
-          className="font-[family-name:var(--font-display)] text-2xl md:text-3xl tracking-tighter text-foreground hover:text-primary transition-colors"
+          className="transition-opacity hover:opacity-80"
         >
-          {siteConfig.name.toUpperCase()}
+          <Image 
+            src="/hitlabs.png" 
+            alt="Hitlabs" 
+            width={120} 
+            height={60} 
+            className="w-24 md:w-32 h-auto object-contain"
+          />
         </Link>
 
         <div className="flex gap-8">
@@ -37,7 +44,6 @@ export function SiteFooter({ commonT }: SiteFooterProps) {
         </div>
 
         <div className="flex items-center gap-6 text-[10px] md:text-xs tracking-widest text-muted-foreground uppercase">
-          <span>© 2026 {siteConfig.name.toUpperCase()}</span>
           <Link href="#" className="hover:text-foreground transition-colors">
             {commonT.privacy}
           </Link>

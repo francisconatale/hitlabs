@@ -28,6 +28,7 @@ export function EditorialWorksList({
   title = "Selected Work",
   subtitle = "Software & Solutions",
   projects,
+  viewAllText,
 }: EditorialWorksListProps) {
   return (
     <div className="w-full bg-[#f8f9fa] text-[#111]">
@@ -69,7 +70,7 @@ export function EditorialWorksList({
                   {p.services.split(' • ').map(s => <div key={s}>{s}</div>)}
                 </div>
                 <Link href={p.href} className="text-[10px] uppercase tracking-widest border-b border-black hover:opacity-50 transition-opacity flex items-center gap-2">
-                  Explore Case Study <ArrowRight className="w-3 h-3" />
+                  {viewAllText || "Explore Case Study"} <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
             </div>

@@ -54,8 +54,9 @@ export default async function ProductsPage() {
         <main className="min-h-screen bg-[#f8f9fa] pt-16">
             <Navbar navT={t.navbar} commonT={t.common} currentLocale={locale} />
             <EditorialWorksList 
-                title="Selected Work" 
-                subtitle="Software & Solutions" 
+                title={t.worksList.title} 
+                subtitle={t.worksList.subtitle} 
+                viewAllText={t.worksList.explore}
                 projects={productsList} 
             />
         </main>

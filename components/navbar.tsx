@@ -112,7 +112,7 @@ export function Navbar({ navT, commonT, currentLocale }: NavbarProps) {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`text-5xl md:text-7xl lg:text-[7rem] font-bold tracking-tighter leading-[0.9] transition-all duration-300 hover:scale-105 hover:text-primary ${
+                  className={`text-4xl md:text-6xl lg:text-[5.5rem] font-bold tracking-tighter leading-[0.9] transition-all duration-300 hover:scale-105 hover:text-primary ${
                     isActive ? "text-primary opacity-80" : "text-foreground"
                   }`}
                 >
