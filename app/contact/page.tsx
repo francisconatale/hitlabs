@@ -56,7 +56,7 @@ export default async function ContactPage() {
                 </div>
             </section>
 
-            <SiteFooter commonT={t.common} />
+            
         </main>
     )
 }

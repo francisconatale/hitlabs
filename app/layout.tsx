@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Bebas_Neue, Inter, Caveat, Anton } from 'next/font/google'
+import { Bebas_Neue, Caveat, Anton } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { LanguageProvider } from '@/components/language-provider'
@@ -9,11 +9,6 @@ const bebasNeue = Bebas_Neue({
   weight: '400',
   subsets: ["latin"],
   variable: '--font-display'
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: '--font-sans'
 });
 
 const caveat = Caveat({
@@ -39,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={defaultLocale}>
-      <body className={`${bebasNeue.variable} ${inter.variable} ${caveat.variable} ${anton.variable} font-sans bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary`}>
+      <body className={`${bebasNeue.variable} ${caveat.variable} ${anton.variable} font-sans bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>

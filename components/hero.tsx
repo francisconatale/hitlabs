@@ -14,7 +14,7 @@ interface HeroProps {
 const kioskitoConfig: StickerConfig = { shape: 'png', pngUrl: '/kioskito.svg', w: 140, h: 140, dieCut: 3, fold: false }
 const deliveryConfig: StickerConfig = { shape: 'png', pngUrl: '/kioskito_delivery.svg', w: 130, h: 130, dieCut: 3, fold: false }
 const arrowConfig: StickerConfig = { shape: 'png', pngUrl: '/logo.svg', w: 140, h: 140, dieCut: 1, fold: false }
-const handConfig: StickerConfig = { shape: 'logo3', w: 140, h: 140, dieCut: 3, fold: false }
+const fedeConfig: StickerConfig = { shape: 'png', pngUrl: '/fede.png', w: 160, h: 160, dieCut: 2, fold: false }
 const bienhechoConfig: StickerConfig = { shape: 'png', pngUrl: '/bienhecho.svg', w: 120, h: 120, dieCut: 3, fold: false }
 
 export function Hero({ heroT }: HeroProps) {
@@ -31,7 +31,7 @@ export function Hero({ heroT }: HeroProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-end pointer-events-auto">
 
           {/* ── Title Group: stickers travel with the title ── */}
-          <div className="lg:col-span-8 relative">
+          <div className="lg:col-span-8 relative z-20">
             {/* Kioskito — relative to title, top-left */}
             <div className="hidden md:block" style={{ position: 'absolute', left: -135, top: -50 }}>
               <Sticker
@@ -41,12 +41,21 @@ export function Hero({ heroT }: HeroProps) {
               />
             </div>
 
-            {/* Delivery — relative to title, top-right */}
-            <div className="hidden md:block" style={{ position: 'absolute', right: -180, top: -20 }}>
+            {/* Delivery — relative to title, shifted more to the left */}
+            <div className="hidden md:block" style={{ position: 'absolute', right: -200, top: -40 }}>
               <Sticker
                 id="hero-delivery"
                 config={deliveryConfig}
                 rotate={-3}
+              />
+            </div>
+
+            {/* FK Fede — relative to title, top-right */}
+            <div className="absolute z-40" style={{ position: 'absolute', right: 100, top: 50 }}>
+              <Sticker
+                id="hero-fede"
+                config={fedeConfig}
+                rotate={12}
               />
             </div>
 
@@ -74,7 +83,7 @@ export function Hero({ heroT }: HeroProps) {
             <div>
               <Link
                 href="/contact"
-                className="group inline-flex w-full sm:w-auto justify-center items-center gap-4 bg-foreground text-background px-8 py-4 uppercase font-bold hover:bg-primary transition-colors pointer-events-auto"
+                className="group inline-flex w-full sm:w-auto justify-center items-center gap-4 bg-primary text-primary-foreground px-8 py-4 uppercase font-bold hover:opacity-90 transition-opacity pointer-events-auto shadow-lg shadow-primary/20"
                 style={{ fontSize: 12, letterSpacing: "0.1em" }}
               >
                 {heroT.ctaPrimary}
@@ -86,9 +95,9 @@ export function Hero({ heroT }: HeroProps) {
       </div>
 
       {/* ── Global Decorations: relative to hero section ── */}
-      <div className="hidden md:block pointer-events-none">
+      <div className="pointer-events-none">
         {/* Arrow — bottom-left of hero */}
-        <div className="absolute" style={{ left: '1%', bottom: '30%' }}>
+        <div className="absolute hidden md:block" style={{ left: '1%', bottom: '30%' }}>
           <Sticker
             id="hero-arrow"
             config={arrowConfig}
@@ -97,20 +106,11 @@ export function Hero({ heroT }: HeroProps) {
         </div>
 
         {/* Bienhecho — center-right area */}
-        <div className="absolute" style={{ right: '12%', bottom: '30%' }}>
+        <div className="absolute hidden md:block" style={{ right: '12%', bottom: '30%' }}>
           <Sticker
             id="hero-bienhecho"
             config={bienhechoConfig}
             rotate={5}
-          />
-        </div>
-
-        {/* Hand — bottom-right of hero */}
-        <div className="absolute" style={{ right: '3%', bottom: '5%' }}>
-          <Sticker
-            id="hero-hand"
-            config={handConfig}
-            rotate={8}
           />
         </div>
       </div>

@@ -70,7 +70,7 @@ export default async function TeamPage() {
                     ))}
                 </div>
             </div>
-            <SiteFooter commonT={t.common} />
+            
         </main>
     )
 }

@@ -79,9 +79,11 @@ export function Sticker({ id, config, top, left, rotate = 0, scale = 1 }: Sticke
       if (saved[id]) {
         const { fx, fy } = saved[id]
         const el = wrapperRef.current?.parentElement
-        if (el) {
+        if (el && Number.isFinite(fx) && Number.isFinite(fy)) {
           const rect = el.getBoundingClientRect()
-          setDragOffset({ x: fx * rect.width, y: fy * rect.height })
+          const w = rect.width || window.innerWidth
+          const h = rect.height || window.innerHeight
+          setDragOffset({ x: fx * w, y: fy * h })
         }
       }
     } catch {}
@@ -212,12 +214,17 @@ export function Sticker({ id, config, top, left, rotate = 0, scale = 1 }: Sticke
         const el = wrapperRef.current?.parentElement;
         if (!el) return;
         const rect = el.getBoundingClientRect();
-        const fx = info.offset.x / rect.width;
-        const fy = info.offset.y / rect.height;
+        // Prevent Infinity if parent is 0x0
+        const w = rect.width || window.innerWidth;
+        const h = rect.height || window.innerHeight;
+        const fx = info.offset.x / w;
+        const fy = info.offset.y / h;
         try {
           const currentStorage = JSON.parse(localStorage.getItem('sticker_positions') || '{}');
-          currentStorage[id] = { fx, fy };
-          localStorage.setItem('sticker_positions', JSON.stringify(currentStorage));
+          if (isFinite(fx) && isFinite(fy)) {
+            currentStorage[id] = { fx, fy };
+            localStorage.setItem('sticker_positions', JSON.stringify(currentStorage));
+          }
           console.log(
             `%c⬇ STICKER [${id}] — copiar en hero.tsx:`,
             'background:#1a1a1a;color:#4ade80;font-weight:bold;padding:2px 6px;border-radius:3fx'
