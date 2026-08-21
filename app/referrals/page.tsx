@@ -28,7 +28,7 @@ export default async function ReferidosPage() {
       
       <ReferidosContent t={t.referidos} />
 
-      <SiteFooter commonT={t.common} />
+      
     </main>
   )
 }

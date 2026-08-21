@@ -1,9 +1,14 @@
 import type { Metadata } from 'next'
-import { Bebas_Neue, Inter, Caveat } from 'next/font/google'
+import { Bebas_Neue, Caveat, Anton, Manrope } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { LanguageProvider } from '@/components/language-provider'
 import { dictionaries, defaultLocale } from '@/lib/i18n'
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: '--font-manrope'
+})
 
 const bebasNeue = Bebas_Neue({
   weight: '400',
@@ -11,14 +16,15 @@ const bebasNeue = Bebas_Neue({
   variable: '--font-display'
 });
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: '--font-sans'
-});
-
 const caveat = Caveat({
   subsets: ["latin"],
   variable: '--font-script'
+});
+
+const anton = Anton({
+  weight: '400',
+  subsets: ["latin"],
+  variable: '--font-anton'
 });
 
 export const metadata: Metadata = {
@@ -33,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={defaultLocale}>
-      <body className={`${bebasNeue.variable} ${inter.variable} ${caveat.variable} font-sans bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary`}>
+      <body className={`${manrope.variable} ${bebasNeue.variable} ${caveat.variable} ${anton.variable} font-sans bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>

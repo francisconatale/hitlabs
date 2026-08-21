@@ -143,7 +143,11 @@
         "earnings": {
             "badge": "Quanto você pode ganhar",
             "headline": "Comissões claras",
-            "tableHeaders": ["Tipo", "Seu papel", "Comissão"],
+            "tableHeaders": [
+                "Tipo",
+                "Seu papel",
+                "Comissão"
+            ],
             "rows": [
                 {
                     "type": "Indicação assistida",
@@ -189,8 +193,14 @@
             "saleLabel": "Venda:",
             "saleAmount": "$300",
             "commissions": [
-                { "label": "Comissão de 15%", "amount": "$45" },
-                { "label": "Comissão de 30%", "amount": "$90" }
+                {
+                    "label": "Comissão de 15%",
+                    "amount": "$45"
+                },
+                {
+                    "label": "Comissão de 30%",
+                    "amount": "$90"
+                }
             ],
             "installmentsNote": "Se o cliente pagar parcelado, a comissão é paga proporcionalmente."
         },
@@ -217,5 +227,17 @@
             "success": "Mensagem enviada! Entraremos em contato em breve.",
             "error": "Falha ao enviar a mensagem. Por favor, tente novamente."
         }
+    },
+    "caseUseProject": {
+        "location": "Localização",
+        "features": "Características",
+        "liveProject": "Projeto ao vivo",
+        "preview": "Visitar",
+        "swipe": "Deslize para ver mais"
+    },
+    "worksList": {
+        "title": "Projetos Selecionados",
+        "subtitle": "Software e Soluções",
+        "explore": "Ver Estudo de Caso"
     }
 }

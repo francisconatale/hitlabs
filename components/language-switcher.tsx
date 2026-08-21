@@ -41,7 +41,7 @@ export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
                     <span className="hidden sm:inline-block font-medium">{currentLanguage.code.toUpperCase()}</span>
                 </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="w-[150px]">
+            <DropdownMenuContent align="end" className="w-[150px] z-[200]">
                 {languages.map((lang) => (
                     <DropdownMenuItem
                         key={lang.code}

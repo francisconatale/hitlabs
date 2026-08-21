@@ -217,5 +217,17 @@
             "success": "Message sent! We'll get back to you shortly.",
             "error": "Failed to send message. Please try again."
         }
+    },
+    "caseUseProject": {
+        "location": "Location",
+        "features": "Features",
+        "liveProject": "Live project",
+        "preview": "Preview",
+        "swipe": "Swipe to see more"
+    },
+    "worksList": {
+        "title": "Selected Work",
+        "subtitle": "Software & Solutions",
+        "explore": "Explore Case Study"
     }
 }
