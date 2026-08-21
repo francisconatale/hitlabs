@@ -15,14 +15,14 @@ const productsList: Project[] = [
     images: ["/kioskito.svg"]
   },
   {
-    id: "hitlabs-logo",
+    id: "agropilot",
     index: "02",
     title: "AGROPILOT",
-    subtitle: "STUDIO IDENTITY",
-    services: "BRANDING • DESIGN • WEB • PRODUCT",
+    subtitle: "PRECISION AGRICULTURE",
+    services: "HARDWARE • SOFTWARE • RTK",
     year: "2026",
-    href: "/products/hitlabs",
-    images: ["/logo.svg"]
+    href: "/products/agropilot",
+    images: ["https://agropilot.vercel.app/logo.svg"]
   },
   {
     id: "fk-fede",
