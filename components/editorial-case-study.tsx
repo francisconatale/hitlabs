@@ -36,8 +36,7 @@ export function EditorialCaseStudy({ data }: EditorialCaseStudyProps) {
   }, [images.length])
 
   return (
-    <section className="relative w-full border-b border-border py-24 md:py-32 px-6 md:px-[54px] lg:px-20 bg-background text-foreground overflow-hidden">
-      
+    <section className="relative w-full border-b border-border py-24 md:py-32 px-6 md:px-[54px] lg:px-20 text-foreground overflow-hidden">
       {/* Textura de papel */}
       <div
         className="absolute inset-0 pointer-events-none opacity-30 z-0"

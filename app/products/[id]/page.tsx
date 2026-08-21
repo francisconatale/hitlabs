@@ -40,6 +40,36 @@ const productsData: Record<string, CaseStudyData> = {
     ],
     websiteUrl: "https://kioskito-web.vercel.app"
   },
+  "agropilot": {
+    title: "Agropilot",
+    features: [
+      {
+        title: "diseño orientado a conversión",
+        description: "Arquitectura de la información pensada para guiar al productor agrícola desde el problema hasta el contacto directo, maximizando la generación de leads."
+      },
+      {
+        title: "identidad visual y UI",
+        description: "Desarrollo de una interfaz limpia y moderna que transmite la alta tecnología y precisión del producto, destacando visualmente la propuesta de valor."
+      },
+      {
+        title: "rendimiento y accesibilidad",
+        description: "Implementación optimizada para tiempos de carga ultrarrápidos, asegurando una navegación fluida incluso desde dispositivos móviles en zonas rurales con conectividad limitada."
+      }
+    ],
+    location: "Argentina",
+    descriptionParagraphs: [
+      "Para el lanzamiento de Agropilot, desarrollamos una presencia digital estratégica enfocada en comunicar de manera simple y directa un producto de alta complejidad tecnológica.",
+      "El proyecto se centró en estructurar la información para resolver objeciones comunes del sector agrícola, acompañando esto con un diseño que inspira confianza, rendimiento técnico impecable y flujos optimizados hacia la conversión."
+    ],
+    logoUrl: "https://agropilot.vercel.app/logo.svg",
+    screenshotUrl: "/agropilot-landing/agropilot-landing-1.png",
+    screenshots: [
+      "/agropilot-landing/agropilot-landing-1.png",
+      "/agropilot-landing/agropilot-landing-2.png",
+      "/agropilot-landing/agropilot-landing-3.png"
+    ],
+    websiteUrl: "https://agropilot.vercel.app"
+  },
   "inner-echo": {
     title: "Inner Echo",
     features: [
@@ -79,7 +109,13 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
     }
 
     return (
-        <main className="min-h-screen bg-background">
+        <main className="min-h-screen bg-background relative overflow-hidden">
+            <div
+              className="fixed inset-0 pointer-events-none opacity-30 z-50"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+              }}
+            />
             <Navbar navT={t.navbar} commonT={t.common} currentLocale={locale} />
             <CaseUseProject data={data} t={t.caseUseProject} />
         </main>
