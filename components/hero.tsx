@@ -51,7 +51,7 @@ export function Hero({ heroT }: HeroProps) {
             </div>
 
             {/* FK Fede — relative to title, top-right */}
-            <div className="absolute z-40" style={{ position: 'absolute', right: 100, top: 50 }}>
+            <div className="hidden md:block absolute z-40" style={{ position: 'absolute', right: 100, top: 50 }}>
               <Sticker
                 id="hero-fede"
                 config={fedeConfig}
