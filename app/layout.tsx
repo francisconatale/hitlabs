@@ -24,6 +24,9 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: `Hitlabs | ${dictionaries[defaultLocale].layout.titleSuffix}`,
   description: dictionaries[defaultLocale].layout.description,
+  verification: {
+    google: "HgfWs0opdYsJnLxJKTBmcg5x67klCbQf0ITXWpg52Ew",
+  },
 }
 
 export default function RootLayout({
