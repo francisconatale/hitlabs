@@ -2,6 +2,12 @@ import { Navbar } from "@/components/navbar"
 import { EditorialWorksList, Project } from "@/components/editorial-works-list"
 import { getServerLocale } from "@/lib/i18n-server"
 import { getTranslation } from "@/lib/i18n"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Productos y Casos de Éxito | HITLABS',
+  description: 'Conoce nuestras soluciones de software y proyectos realizados.',
+}
 
 const productsList: Project[] = [
   {

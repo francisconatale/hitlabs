@@ -5,6 +5,12 @@ import { getTranslation } from "@/lib/i18n"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Github, Linkedin, Mail } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Nuestro Equipo | HITLABS',
+  description: 'Conoce a las personas detrás del software en HITLABS.',
+}
 
 export default async function TeamPage() {
     const locale = await getServerLocale()
