@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editorial Case Study Component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #d1d5db; /* Gray-300 */
+    }
+  </style>
+</head>
+<body class="min-h-screen py-16 flex justify-center items-center">
+  <!-- Contenedor principal: blanco, 93% del ancho, sin sombras ni bordes -->
+  <div class="bg-white w-[93%] max-w-[1500px] p-8 md:p-12 lg:p-16 xl:p-20">
+    
+    <!-- 2. PROJECT INTRO -->
+    <!-- Grid asimétrico de tres columnas -->
+    <div class="grid grid-cols-1 lg:grid-cols-[1.5fr_1.2fr_2fr] gap-10 lg:gap-12 mb-20">
+      
+      <!-- Columna izquierda -->
+      <div class="flex flex-col">
+        <div class="text-gray-400 text-4xl md:text-5xl font-light mb-4 leading-none">→</div>
+        <h1 class="text-6xl md:text-7xl lg:text-[5.5rem] font-bold tracking-tight text-gray-900 leading-[1.05]">Inner Echo</h1>
+      </div>
+
+      <!-- Columna central -->
+      <div class="flex flex-col pt-2 lg:pt-[4.5rem]">
+        <div class="mb-10">
+          <h3 class="text-gray-400 text-[11px] font-medium mb-3 uppercase tracking-wider">Services</h3>
+          <ul class="text-[13px] text-gray-900 space-y-1">
+            <li>Brand Strategy</li>
+            <li>Verbal Identity</li>
+            <li>Visual System Design</li>
+            <li>Cultural Positioning</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-gray-400 text-[11px] font-medium mb-3 uppercase tracking-wider">Location</h3>
+          <p class="text-[13px] text-gray-900">Rotterdam, Netherlands</p>
+        </div>
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="pt-2 lg:pt-[4.5rem]">
+        <h3 class="text-gray-400 text-[11px] font-medium mb-3 uppercase tracking-wider">Description</h3>
+        <div class="text-[14px] leading-[1.6] text-gray-900 max-w-[420px] space-y-4">
+          <p>
+            "Inner Echo" reimagines brand creation as a process of internal listening—
+            where values, contradictions, and untold narratives shape a resonant identity.
+            Rather than imposing a fixed image, we guided the brand through a process of
+            self-inquiry, resulting in a system that feels alive, open-ended, and rooted in
+            emotional logic.
+          </p>
+          <p>
+            The work blurs the boundary between clarity and suggestion, leaving room for
+            brands to grow into their future selves. Through minimal forms, tonal gradients,
+            and strategic silence, we invite audiences not just to recognize a brand—but to
+            feel it.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 3. IMAGE GALLERY -->
+    <!-- Galería asimétrica de dos columnas, misma línea de inicio -->
+    <div class="flex flex-col lg:flex-row items-start gap-4">
+      
+      <!-- Imagen Izquierda (aprox 40%) -->
+      <div class="w-full lg:w-[40%] flex flex-col">
+        <!-- Contenedor cuadrado para la imagen -->
+        <div class="aspect-square w-full mb-2 bg-gray-100">
+            <img src="https://images.unsplash.com/photo-1558304970-abd589baebe5?auto=format&fit=crop&q=80&w=800" alt="Inner Echo concept 1" class="w-full h-full object-cover" />
+        </div>
+        <!-- Número indicador -->
+        <span class="text-gray-400 text-3xl font-medium tracking-tight">(01)</span>
+      </div>
+
+      <!-- Imagen Derecha (aprox 60%) -->
+      <div class="w-full lg:w-[60%]">
+        <!-- Contenedor alto para la imagen -->
+        <div class="w-full h-[500px] lg:h-[750px] bg-gray-100">
+             <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1200" alt="Inner Echo concept 2" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

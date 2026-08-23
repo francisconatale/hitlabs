@@ -5,6 +5,12 @@ import { getTranslation } from "@/lib/i18n"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Github, Linkedin, Mail } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Nuestro Equipo | HITLABS',
+  description: 'Conoce a las personas detrás del software en HITLABS.',
+}
 
 export default async function TeamPage() {
     const locale = await getServerLocale()
@@ -27,7 +33,13 @@ export default async function TeamPage() {
     ]
 
     return (
-        <main className="min-h-screen bg-background pt-16">
+        <main className="min-h-screen bg-background pt-16 relative overflow-hidden">
+            <div
+              className="fixed inset-0 pointer-events-none opacity-30 z-50"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+              }}
+            />
             <Navbar navT={t.navbar} commonT={t.common} currentLocale={locale} />
             <div className="py-24 px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
                 <div className="flex flex-col items-center text-center space-y-4 mb-16">
@@ -70,7 +82,7 @@ export default async function TeamPage() {
                     ))}
                 </div>
             </div>
-            <SiteFooter commonT={t.common} />
+            
         </main>
     )
 }
