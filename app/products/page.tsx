@@ -38,7 +38,7 @@ const productsList: Project[] = [
     services: "FRONTEND • SEO • BRANDING • COPYWRITING",
     year: "2026",
     href: "/products/federicokaenel",
-    images: ["/federico-landing/federicokanael_1.png"]
+    images: ["/fede.png"]
   },
   {
     id: "bienhecho",
@@ -48,7 +48,7 @@ const productsList: Project[] = [
     services: "FULLSTACK • UX/UI • BRANDING",
     year: "2026",
     href: "/products/bienhecho",
-    images: ["/bienhecho-landing/bienhecho_1.png"]
+    images: ["/bienhecho.svg"]
   }
 ]
 
