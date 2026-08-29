@@ -94,6 +94,76 @@ const productsData: Record<string, CaseStudyData> = {
     logoUrl: "https://images.unsplash.com/photo-1558304970-abd589baebe5?auto=format&fit=crop&q=80&w=800",
     screenshotUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1200",
     websiteUrl: "https://example.com"
+  },
+  "federicokaenel": {
+    title: "Federico Kaenel",
+    features: [
+      {
+        title: "frontend ultrarrápido",
+        description: "Desarrollo de una interfaz ágil y moderna. Optimizada para tiempos de carga mínimos y una experiencia de usuario fluida."
+      },
+      {
+        title: "seo técnico y semántico",
+        description: "Arquitectura web estructurada con los más altos estándares de posicionamiento. Implementación de Schema.org y Core Web Vitals para asegurar visibilidad orgánica."
+      },
+      {
+        title: "copywriting B2B",
+        description: "Mensajes claros y persuasivos orientados a la conversión, diseñados específicamente para el sector de la ingeniería industrial."
+      },
+      {
+        title: "branding y UI",
+        description: "Identidad visual que transmite precisión, confianza y solidez técnica, reflejando la calidad de los servicios estructurales ofrecidos."
+      }
+    ],
+    location: "Argentina",
+    descriptionParagraphs: [
+      "Una presencia digital estratégica para el sector industrial. El sitio de Federico Kaenel funciona como una landing page de alto rendimiento diseñada para una firma de ingeniería y estructuras metálicas.",
+      "El proyecto nace con el objetivo de establecer un canal de contacto profesional y confiable. A través de un diseño minimalista, copys directos y un sólido trabajo de optimización en motores de búsqueda, la web transforma la complejidad técnica de la ingeniería en soluciones accesibles para los clientes."
+    ],
+    logoUrl: "https://federicokaenel.vercel.app/icon0.svg",
+    screenshotUrl: "/federico-landing/federicokanael_1.png",
+    screenshots: [
+      "/federico-landing/federicokanael_1.png",
+      "/federico-landing/federicokanael_2.png",
+      "/federico-landing/federicokanael_3.png"
+    ],
+    websiteUrl: "https://federicokaenel.vercel.app"
+  },
+  "bienhecho": {
+    title: "Bien Hecho",
+    features: [
+      {
+        title: "mobile-first UX/UI",
+        description: "Diseño de interfaz centrado en el usuario móvil. Flujos de trabajo sin fricción para crear presupuestos en la calle, con conexión intermitente."
+      },
+      {
+        title: "arquitectura de software",
+        description: "Desarrollo de un sistema robusto y escalable para la generación dinámica de PDFs, gestión de plantillas por oficios y envío instantáneo por WhatsApp."
+      },
+      {
+        title: "brand identity",
+        description: "Creación de una identidad visual que transmite profesionalismo y confianza, elevando la imagen de los trabajadores independientes frente a sus clientes."
+      },
+      {
+        title: "rendimiento",
+        description: "Optimización extrema para asegurar tiempos de carga casi nulos, fundamental para el usuario que necesita resolver tareas operativas en segundos."
+      }
+    ],
+    location: "Argentina",
+    descriptionParagraphs: [
+      "Bien Hecho es una aplicación web (SaaS) diseñada para que los profesionales de oficios gestionen y facturen sus trabajos de forma simple y rápida desde su celular.",
+      "El proyecto abarcó desde la conceptualización y el diseño de la marca, hasta el desarrollo full-stack. La solución reemplaza la informalidad del papel y los mensajes sueltos por un sistema de cotizaciones en PDF, ayudando a los trabajadores a proyectar mayor profesionalismo y no perder ventas."
+    ],
+    logoUrl: "https://bienhecho.vercel.app/icon.svg",
+    screenshotUrl: "/bienhecho-landing/bienhecho_1.png",
+    screenshots: [
+      "/bienhecho-landing/bienhecho_1.png",
+      "/bienhecho-landing/bienhecho_2.png",
+      "/bienhecho-landing/bienhecho_3.png",
+      "/bienhecho-landing/bienhecho_4.png",
+      "/bienhecho-landing/bienhecho_5.png"
+    ],
+    websiteUrl: "https://bienhecho.vercel.app"
   }
 }
 

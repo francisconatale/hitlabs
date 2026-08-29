@@ -31,24 +31,24 @@ const productsList: Project[] = [
     images: ["https://agropilot.vercel.app/logo.svg"]
   },
   {
-    id: "fk-fede",
+    id: "federicokaenel",
     index: "03",
     title: "FEDERICO KAENEL",
-    subtitle: "PERSONAL BRANDING",
-    services: "IDENTITY • DESIGN • WEB • PORTFOLIO",
+    subtitle: "LANDING PAGE & SEO",
+    services: "FRONTEND • SEO • BRANDING • COPYWRITING",
     year: "2026",
-    href: "/products/fk-fede",
-    images: ["/fede.png"]
+    href: "/products/federicokaenel",
+    images: ["/federico-landing/federicokanael_1.png"]
   },
   {
     id: "bienhecho",
     index: "04",
     title: "BIEN HECHO",
-    subtitle: "QUALITY ASSURANCE",
-    services: "BRANDING • STRATEGY • SOFTWARE",
+    subtitle: "SAAS / QUOTATION TOOL",
+    services: "FULLSTACK • UX/UI • BRANDING",
     year: "2026",
     href: "/products/bienhecho",
-    images: ["/bienhecho.svg"]
+    images: ["/bienhecho-landing/bienhecho_1.png"]
   }
 ]
 
