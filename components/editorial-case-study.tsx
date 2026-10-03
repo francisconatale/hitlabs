@@ -89,7 +89,7 @@ export function EditorialCaseStudy({ data }: EditorialCaseStudyProps) {
           </div>
           
           {/* Visuals Area (Fading Images) */}
-          <div className="lg:col-span-5 relative w-full aspect-video md:aspect-[4/3] bg-card/30 border border-border flex items-center justify-center p-6 transition-colors duration-500 hover:bg-primary/5 rounded-none overflow-hidden">
+          <div className="lg:col-span-5 relative w-full aspect-video md:aspect-[4/3] bg-card/30 border border-border flex items-center justify-center p-6 transition-colors duration-500 hover:bg-primary/5 rounded-none overflow-hidden z-[45]">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
             
             <div className="relative w-full h-full overflow-hidden">

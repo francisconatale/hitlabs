@@ -49,7 +49,7 @@ export function EditorialWorksList({
 
               {/* Premium Screenshot */}
               <motion.div 
-                className="w-full aspect-[4/3] bg-[#ececec] overflow-hidden flex items-center justify-center relative shadow-sm rounded-lg"
+                className="w-full aspect-[4/3] bg-[#ececec] overflow-hidden flex items-center justify-center relative shadow-sm rounded-lg z-[45]"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}

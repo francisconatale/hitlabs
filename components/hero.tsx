@@ -1,10 +1,7 @@
-"use client"
-
 import Link from "next/link"
 import { TranslationDict } from "@/lib/i18n"
 import { ArrowRight } from "lucide-react"
 import { Sticker, StickerConfig } from "@/components/sticker"
-import { useRef } from "react"
 
 interface HeroProps {
   heroT: TranslationDict['hero']
@@ -18,11 +15,8 @@ const fedeConfig: StickerConfig = { shape: 'png', pngUrl: '/fede.png', w: 160, h
 const bienhechoConfig: StickerConfig = { shape: 'png', pngUrl: '/bienhecho.svg', w: 120, h: 120, dieCut: 3, fold: false }
 
 export function Hero({ heroT }: HeroProps) {
-  const containerRef = useRef<HTMLDivElement>(null)
-
   return (
     <section
-      ref={containerRef}
       className="w-full relative border-b border-border overflow-hidden pt-28 pb-20 lg:pt-36 lg:pb-32"
       style={{ background: "var(--background)" }}
     >
