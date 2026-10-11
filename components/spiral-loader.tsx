@@ -57,6 +57,7 @@ export function SpiralLoader({ onComplete, className = '' }: SpiralLoaderProps) 
         strokeDasharray: `${L} ${L}`,
         strokeDashoffset: L,
         attr: { 'stroke-width': 600 },
+        opacity: 1,
       });
 
       const tl = gsap.timeline({
@@ -155,7 +156,8 @@ export function SpiralLoader({ onComplete, className = '' }: SpiralLoaderProps) 
           stroke="currentColor"
           strokeLinecap="round"
           strokeLinejoin="round"
-          strokeWidth="600"
+          strokeWidth="0"
+          style={{ opacity: 0 }}
         />
       </svg>
     </div>
