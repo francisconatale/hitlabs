@@ -3,6 +3,7 @@ import { Bebas_Neue, Caveat, Anton, Manrope } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { LanguageProvider } from '@/components/language-provider'
+import { LoaderProvider } from '@/components/loader-provider'
 import { dictionaries, defaultLocale } from '@/lib/i18n'
 
 const manrope = Manrope({
@@ -78,7 +79,9 @@ export default function RootLayout({
           }}
         />
         <LanguageProvider>
-          {children}
+          <LoaderProvider>
+            {children}
+          </LoaderProvider>
         </LanguageProvider>
         <Analytics />
       </body>

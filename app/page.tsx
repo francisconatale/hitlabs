@@ -5,6 +5,7 @@ import { FeaturesGrid } from "@/components/features-grid"
 import { SocialProof } from "@/components/social-proof"
 import { FinalCTA } from "@/components/final-cta"
 import { SiteFooter } from "@/components/site-footer"
+import { SpiralLoader } from "@/components/spiral-loader"
 import { getServerLocale } from "@/lib/i18n-server"
 import { getTranslation } from "@/lib/i18n"
 
@@ -14,6 +15,7 @@ export default async function HomePage() {
 
   return (
     <main className="min-h-screen bg-background relative overflow-hidden">
+      <SpiralLoader />
       <div
         className="fixed inset-0 pointer-events-none opacity-30 z-40"
         style={{
