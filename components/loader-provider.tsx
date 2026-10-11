@@ -10,25 +10,22 @@ type LoaderContextType = {
 const LoaderContext = createContext<LoaderContextType | undefined>(undefined);
 
 export function LoaderProvider({ children }: { children: React.ReactNode }) {
-  // Inicialmente asumimos true hasta chequear en cliente para evitar flash en SSR
-  const [hasLoaded, setHasLoaded] = useState<boolean>(true);
+  // Inicialmente false para que el loader esté presente desde el primer frame sin parpadeo
+  const [hasLoaded, setHasLoaded] = useState<boolean>(false);
 
   useEffect(() => {
-    const alreadyShown = sessionStorage.getItem('hitlabs_initial_loader_shown');
-    if (alreadyShown === 'true') {
-      setHasLoaded(true);
-    } else {
-      setHasLoaded(false);
-    }
+    try {
+      if (sessionStorage.getItem('hitlabs_initial_loader_shown') === 'true') {
+        setHasLoaded(true);
+      }
+    } catch (e) {}
   }, []);
 
   const markAsLoaded = () => {
     setHasLoaded(true);
     try {
       sessionStorage.setItem('hitlabs_initial_loader_shown', 'true');
-    } catch (e) {
-      // Ignore in private browsing / sandboxes if storage is blocked
-    }
+    } catch (e) {}
   };
 
   return (

@@ -29,6 +29,17 @@ export function SpiralLoader({ onComplete, className = '' }: SpiralLoaderProps) 
     const logo = logoRef.current;
     if (!container || !path || !logo) return;
 
+    // Bloquear scroll mientras el loader esté activo
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const noTouchScroll = (e: TouchEvent) => e.preventDefault();
+    window.addEventListener('touchmove', noTouchScroll, { passive: false });
+
+    const unlockScroll = () => {
+      document.body.style.overflow = originalOverflow || '';
+      window.removeEventListener('touchmove', noTouchScroll);
+    };
+
     const ctx = gsap.context(() => {
       const L = path.getTotalLength();
 
@@ -50,6 +61,7 @@ export function SpiralLoader({ onComplete, className = '' }: SpiralLoaderProps) 
 
       const tl = gsap.timeline({
         onComplete: () => {
+          unlockScroll();
           markAsLoaded();
           gsap.set(container, { display: 'none' });
           if (onComplete) onComplete();
@@ -92,18 +104,29 @@ export function SpiralLoader({ onComplete, className = '' }: SpiralLoaderProps) 
         );
     }, containerRef);
 
-    return () => ctx.revert();
+    return () => {
+      unlockScroll();
+      ctx.revert();
+    };
   }, [onComplete, pathname, hasLoaded, markAsLoaded]);
 
-  // Solo se monta en el Home ('/') y si no se ha cargado previamente
+  // Si no estamos en Home o ya cargó en esta sesión, no renderizar
   if (pathname !== '/' || hasLoaded) return null;
 
   return (
     <div
+      id="hitlabs-spiral-loader"
       ref={containerRef}
       className={`fixed inset-0 z-[9999] overflow-hidden bg-background text-primary pointer-events-auto flex items-center justify-center ${className}`}
       aria-hidden="true"
     >
+      {/* Script síncrono para eliminar el elemento ANTES del primer renderizado si ya cargó en sesión */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `try{if(sessionStorage.getItem('hitlabs_initial_loader_shown')==='true'){var el=document.getElementById('hitlabs-spiral-loader');if(el)el.style.display='none';}}catch(e){}`,
+        }}
+      />
+
       {/* Logo de Hitlabs sobre el fondo gris (z-10) */}
       <div
         ref={logoRef}
